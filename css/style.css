@@ -2,14 +2,16 @@
 
 :root{
     /* colors */
-	--color-basic: ;
-	--color-basic-invert: ;
-    --color-primary: ;
-	--color-primary-light: ;
-	--color-secondary: ;
-	--color-secondary-light: ;
-	--color-tertiary: ;
-	--color-special: ;
+	--color-basic: #000000;
+	--color-basic-invert: #ffffff;
+    --color-primary: #080b12;
+	--color-primary-light: #141922;
+	--color-secondary: #282828;
+	--color-secondary-light: #828282;
+	--color-tertiary: #6e6e6e;
+	--color-special: #abfc2f;
+    --color-progress-empty: #5b5b5b;
+    --color-progress-full: #c7c7c7;
 
     /* Spacing */
     --spacing-xxsmall: .5rem;
@@ -37,7 +39,7 @@
 }
 /* Rem reset */
 html{
-	font-size: 15px;
+	font-size: 12px;
 }
 /* Font reset */
 body{
@@ -85,10 +87,16 @@ li{
 /* Buttons - Links - imgs */
 button{
     padding: var(--spacing-xsmall) calc(2 * var(--spacing-xsmall));
-    background-color: none;
     text-align: center;
     border: none;
     font-size: 1rem;
+    background-color: transparent;
+    color: var(--color-basic-invert);
+}
+
+button.upgrade{
+    border-radius: var(--spacing-medium);
+    border: 2px solid var(--color-basic-invert);
 }
 
 img{
@@ -124,6 +132,10 @@ a{
 
 .card{
 		
+}
+
+.scroll{
+    overflow: auto;
 }
 /* ------------------------------------ */
 
@@ -166,8 +178,18 @@ a{
 	text-align: center;
 }
 
+.txt-right{
+    text-align: right;
+}
+
 .txt-bold{
 	font-weight: bold;
+}
+/* ------------------------------------ */
+
+/* Backgrounds */
+.bg-primary{
+    background-color: var(--color-primary);
 }
 /* ------------------------------------ */
 
@@ -265,18 +287,42 @@ a{
 /* ************************************************************************ */
 
 /* Main */
+aside{
+    background-color: var(--color-basic);
+}
+
+section{
+    background-color: var(--color-primary-light);
+}
+
+img.logo-small{
+    width: var(--spacing-small);
+}
+
+img.logo-big{
+    display: none;
+    width: 12rem;
+}
 
 /* ************************************************************************ */
 
 /* Footer */
-
+footer{
+    background-color: var(--color-secondary);
+}
 /* ************************************************************************ */
 /*                             Media Query                                  */
 /* ************************************************************************ */
 
 /* S - Small */
 @media screen and (min-width: 568px){
-
+    img.logo-small{
+        display: none;
+    }
+    
+    img.logo-big{
+        display: block;
+    }
 }
 /* ------------------------------------ */
 
