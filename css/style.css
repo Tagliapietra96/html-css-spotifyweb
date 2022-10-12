@@ -291,6 +291,21 @@ aside{
     background-color: var(--color-basic);
 }
 
+aside a{
+    color: var(--color-secondary-light);
+    text-decoration: none;
+}
+
+aside span{
+    display: none;
+    margin-left: var(--spacing-xsmall);
+}
+
+aside i{
+    font-size: 1.7rem;
+    vertical-align: middle;
+}
+
 section{
     background-color: var(--color-primary-light);
 }
@@ -316,6 +331,14 @@ footer{
 
 /* S - Small */
 @media screen and (min-width: 568px){
+    aside li.row.j-c{
+        justify-content: flex-start;
+    }
+
+    aside span{
+        display: inline-block;
+    }
+
     img.logo-small{
         display: none;
     }
