@@ -336,6 +336,10 @@ aside button.small i{
     vertical-align: text-top;
 }
 
+aside a.profile{
+    color: var(--color-basic-invert);
+}
+
 section{
     background-color: var(--color-primary-light);
 }
