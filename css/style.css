@@ -99,6 +99,15 @@ button.upgrade{
     border: 2px solid var(--color-basic-invert);
 }
 
+button.small{
+    border-radius: 50%;
+    border: 1px solid var(--color-secondary-light);
+    padding: unset;
+    height: 1rem;
+    aspect-ratio: 1/1;
+    vertical-align: middle;
+}
+
 img{
     display: block;
     width: 100%;
@@ -291,6 +300,17 @@ aside{
     background-color: var(--color-basic);
 }
 
+
+img.logo-small{
+    width: var(--spacing-small);
+}
+
+img.logo-big{
+    display: none;
+    width: 12rem;
+}
+
+
 aside a{
     color: var(--color-secondary-light);
     text-decoration: none;
@@ -306,17 +326,18 @@ aside i{
     vertical-align: middle;
 }
 
+aside li.install-app{
+    border-bottom: 1px solid var(--color-secondary-light);
+}
+
+aside button.small i{
+    font-size: .7rem;
+    color: var(--color-secondary-light);
+    vertical-align: text-top;
+}
+
 section{
     background-color: var(--color-primary-light);
-}
-
-img.logo-small{
-    width: var(--spacing-small);
-}
-
-img.logo-big{
-    display: none;
-    width: 12rem;
 }
 
 /* ************************************************************************ */
@@ -331,6 +352,10 @@ footer{
 
 /* S - Small */
 @media screen and (min-width: 568px){
+    aside{
+        width: 200px;
+    }
+
     aside li.row.j-c{
         justify-content: flex-start;
     }
