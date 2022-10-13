@@ -205,6 +205,10 @@ a{
 .col.no-shrink{
     flex-shrink: 0;
 }
+
+.col.c1_2{
+    flex-basis: 50%;
+}
 /* ------------------------------------ */
 
 /* Text */
