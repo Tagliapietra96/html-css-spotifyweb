@@ -443,6 +443,23 @@ section .relative:hover div.over-underline{
     opacity: 1;
 }
 
+div.over-lateral{
+    width: 2px;
+    position: absolute;
+    left:-10px;
+    top:0;
+    height: 0;
+    opacity: 0;
+    background-color: var(--color-special);
+    transition: height .5s, opacity .3s;
+}
+
+aside .relative:hover div.over-lateral{
+    opacity: 1;
+    height: 110%;
+}
+
+
 /* ************************************************************************ */
 
 /* Footer */
