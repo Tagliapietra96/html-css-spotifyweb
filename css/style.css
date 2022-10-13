@@ -146,6 +146,15 @@ a{
     display: inline-block;
     color: var(--color-secondary-light);
     text-decoration: none;
+    transition: all .3s;
+}
+
+a:hover{
+    color: var(--color-basic-invert);
+}
+
+a.subtitle:hover{
+    text-decoration: underline;
 }
 /* Tags Reset End */
 
@@ -439,6 +448,14 @@ footer span{
 
 footer .likes{
     gap: var(--spacing-xxsmall);
+}
+
+footer .likes i{
+    transition: all.3s;
+}
+
+footer .likes i:hover{
+    color: var(--color-basic-invert);
 }
 
 footer button i.fa-circle-play{
