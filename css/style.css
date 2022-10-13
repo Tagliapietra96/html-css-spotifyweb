@@ -426,6 +426,23 @@ section .overlay{
     transition: all .4s;
 }
 
+div.over-underline{
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    width: 0;
+    opacity: 0;
+    background-color: var(--color-special);
+    transition: left .7s, width .7s, opacity .3s;
+    margin-top: .5rem;
+}
+
+section .relative:hover div.over-underline{
+    left: 0%;
+    width: 100%;
+    opacity: 1;
+}
+
 /* ************************************************************************ */
 
 /* Footer */
@@ -531,6 +548,10 @@ footer div.progressbar:hover div.dot{
 
 input{
     display: none;
+}
+
+.relative{
+    position: relative;
 }
 
 
