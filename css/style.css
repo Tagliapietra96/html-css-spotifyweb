@@ -470,6 +470,10 @@ footer .img-container img{
     max-width: 5rem;
 }
 
+.round{
+    border-radius: 50%;
+}
+
 
 /* ************************************************************************ */
 /*                             Media Query                                  */
