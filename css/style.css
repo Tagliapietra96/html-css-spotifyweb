@@ -39,7 +39,7 @@
 }
 /* Rem reset */
 html{
-	font-size: 12px;
+	font-size: 10px;
 }
 /* Font reset */
 body{
@@ -70,6 +70,16 @@ h3{
 
 h4{
     font-size: 1.5rem;
+    color: var(--color-basic-invert);
+}
+
+h5{
+    font-size: 1.5rem;
+    color: var(--color-basic-invert);
+}
+
+h6{
+    font-size: 1rem;
     color: var(--color-basic-invert);
 }
 /* ------------------------------------ */
@@ -112,6 +122,10 @@ button.small{
     vertical-align: middle;
 }
 
+button.empty{
+    padding: unset;
+}
+
 img{
     display: block;
     width: 100%;
@@ -119,12 +133,14 @@ img{
 }
 
 img.small{
-	width: 50%;
+	width: 15%;
 }
 
 a{
     font-size: 1rem;
     display: inline-block;
+    color: var(--color-secondary-light);
+    text-decoration: none;
 }
 /* Tags Reset End */
 
@@ -315,12 +331,6 @@ img.logo-big{
     width: 12rem;
 }
 
-
-aside a{
-    color: var(--color-secondary-light);
-    text-decoration: none;
-}
-
 aside span{
     display: none;
     margin-left: var(--spacing-xsmall);
@@ -379,12 +389,69 @@ section{
 footer{
     background-color: var(--color-secondary);
 }
+
+footer i{
+    color: var(--color-basic-invert);
+    font-size: 1.5rem;
+}
+
+footer div.left i{
+    color: var(--color-secondary-light);
+}
+
+footer span{
+    font-size: .8rem;
+}
+
+footer .likes{
+    gap: var(--spacing-xxsmall);
+}
+
+footer button i.fa-circle-play{
+    font-size: 2rem;
+}
+
+footer .playbuttons{
+    gap: .5rem;
+}
+
+footer .empty-bar{
+    background-color: var(--color-progress-empty);
+    height: 4px;
+    border-radius: 2px;
+}
+
+footer .full-bar{
+    background-color: var(--color-progress-full);
+    height: 4px;
+    border-radius: 2px;
+    width: 20%;
+}
+
+footer .settings{
+    gap: var(--spacing-xxsmall);
+    flex-basis: 30%;
+}
+
+footer .volume{ 
+    flex-basis: 50%;
+}
+
+footer .img-container img{
+    max-width: 5rem;
+}
+
+
 /* ************************************************************************ */
 /*                             Media Query                                  */
 /* ************************************************************************ */
 
 /* S - Small */
 @media screen and (min-width: 568px){
+    html{
+        font-size: 12px;
+    }
+
     aside{
         width: 200px;
     }
@@ -409,16 +476,47 @@ footer{
         display: block;
     }
 
+    footer a.row.d-c{
+        flex-direction: row;
+        gap: .3rem;
+    }
+
+    
+    footer .settings{
+        gap: var(--spacing-xxsmall);
+        flex-basis: 20%;
+    }
+
+    footer .playbuttons{
+        gap: 2rem;
+    }
+
 }
 /* ------------------------------------ */
 
 /* M - Medium */
 @media screen and (min-width: 768px){
+    footer .likes.row,
+    footer .settings{
+        flex-direction: row;
+        gap: 1.5rem;
+    }
 
+    footer .playbuttons{
+        gap: 3rem;
+    }
 }
 /* ------------------------------------ */
 
 /* L - Large */
 @media screen and (min-width: 992px){
 
+    footer .playbuttons{
+        gap: 4.5rem;
+    }
+
+    footer .settings{
+        gap: var(--spacing-xxsmall);
+        flex-basis: 15%;
+    }
 }
