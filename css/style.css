@@ -160,7 +160,11 @@ a{
 }
 
 .card{
-		
+	padding: var(--spacing-xxsmall);	
+}
+
+.card-img{
+    position: relative;
 }
 
 .scroll{
@@ -504,6 +508,10 @@ footer .img-container img{
     footer .playbuttons{
         gap: 3rem;
     }
+
+    .col.m-1_4{
+        flex-basis: 25%;
+    }
 }
 /* ------------------------------------ */
 
@@ -516,5 +524,9 @@ footer .img-container img{
 
     footer .settings{
         flex-basis: 15%;
+    }
+
+    .col.l-1_6{
+        flex-basis: var(--proportion-1_6);
     }
 }
