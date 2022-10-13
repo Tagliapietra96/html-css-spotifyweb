@@ -391,6 +391,27 @@ section{
     background-color: var(--color-primary-light);
 }
 
+section .card-img{
+    position: relative;
+}
+
+section .card-img:hover .overlay{
+    opacity: 1;
+}
+
+section .overlay{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; 
+    color: var(--color-basic-invert);
+    font-size: 5rem;
+    opacity: 0;
+    transition: all .4s;
+}
+
 /* ************************************************************************ */
 
 /* Footer */
