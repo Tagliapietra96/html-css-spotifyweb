@@ -55,18 +55,22 @@ body{
 /* Titles */
 h1{
     font-size: 4.5rem;
+    color: var(--color-basic-invert);
 }
 
 h2{
     font-size: 3rem;
+    color: var(--color-basic-invert);
 }
 
 h3{
     font-size: 2rem;
+    color: var(--color-basic-invert);
 }
 
 h4{
     font-size: 1.5rem;
+    color: var(--color-basic-invert);
 }
 /* ------------------------------------ */
 
@@ -175,6 +179,7 @@ a{
 
 .col.grow{
     flex-grow: 1;
+    min-height: 0px;
 }
 
 .col.no-shrink{
@@ -330,6 +335,26 @@ aside li.install-app{
     border-bottom: 1px solid var(--color-secondary-light);
 }
 
+aside h2 .title{
+    font-size: 1.5rem;
+}
+
+aside .create-btn button{
+    padding: unset;
+    font-size: var(--spacing-small);
+    color: var(--color-basic);
+    vertical-align: middle;
+    background-color: var(--color-secondary-light);
+    width: var(--spacing-medium);
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+}
+
+aside .create-btn a span{
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
 aside button.small i{
     font-size: .7rem;
     color: var(--color-secondary-light);
@@ -375,6 +400,7 @@ footer{
     img.logo-big{
         display: block;
     }
+
 }
 /* ------------------------------------ */
 
