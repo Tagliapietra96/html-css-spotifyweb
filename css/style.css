@@ -483,12 +483,12 @@ footer .full-bar{
 
 footer .settings{
     gap: var(--spacing-xxsmall);
-    flex-basis: 30%;
+    width: 100px;
 }
 
-footer .volume{ 
+/* footer .volume{ 
     flex-basis: 50%;
-}
+} */
 
 footer .img-container img{
     max-width: 5rem;
