@@ -341,17 +341,17 @@ aside h2 .title{
 
 aside .create-btn button{
     padding: unset;
-    font-size: var(--spacing-small);
+    font-size: 2rem;
     color: var(--color-basic);
     vertical-align: middle;
     background-color: var(--color-secondary-light);
-    width: var(--spacing-medium);
+    width: 2.5rem;
     aspect-ratio: 1/1;
     border-radius: 5px;
 }
 
 aside .create-btn a span{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     vertical-align: middle;
 }
 
