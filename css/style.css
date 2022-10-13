@@ -477,6 +477,8 @@ footer .full-bar{
     height: 4px;
     border-radius: 2px;
     width: 20%;
+    transition: all .3s;
+    position: relative;
 }
 
 footer .settings{
@@ -494,6 +496,26 @@ footer .img-container img{
 
 .round{
     border-radius: 50%;
+}
+
+footer div.progressbar:hover .full-bar{
+    background-color: var(--color-special);
+}
+
+footer div.dot{
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: var(--color-basic-invert);
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+
+footer div.progressbar:hover div.dot{
+    opacity: 1;
+    transform: scale(2);
 }
 
 
