@@ -365,6 +365,10 @@ aside a.profile{
     color: var(--color-basic-invert);
 }
 
+aside .playlist-hidden{
+    display: none;
+}
+
 section{
     background-color: var(--color-primary-light);
 }
@@ -398,6 +402,10 @@ footer{
     }
     
     img.logo-big{
+        display: block;
+    }
+
+    aside .playlist-hidden{
         display: block;
     }
 
