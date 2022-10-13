@@ -483,7 +483,6 @@ footer .img-container img{
 
     
     footer .settings{
-        gap: var(--spacing-xxsmall);
         flex-basis: 20%;
     }
 
@@ -516,7 +515,6 @@ footer .img-container img{
     }
 
     footer .settings{
-        gap: var(--spacing-xxsmall);
         flex-basis: 15%;
     }
 }
