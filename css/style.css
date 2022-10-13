@@ -483,12 +483,23 @@ footer .full-bar{
 
 footer .settings{
     gap: var(--spacing-xxsmall);
-    width: 100px;
 }
 
-/* footer .volume{ 
-    flex-basis: 50%;
-} */
+footer .volume{ 
+    opacity: 0;
+    width: 100px;
+    padding: 2rem 1rem;
+    position: fixed;
+    bottom: 8rem;
+    right: -3rem;
+    background-color: var(--color-secondary);
+    transform: rotate(-90deg);
+    transition: opacity .3s;
+}
+
+footer input:checked + .volume{
+    opacity: 1;
+}
 
 footer .img-container img{
     max-width: 5rem;
@@ -516,6 +527,10 @@ footer div.dot{
 footer div.progressbar:hover div.dot{
     opacity: 1;
     transform: scale(2);
+}
+
+input{
+    display: none;
 }
 
 
@@ -565,6 +580,18 @@ footer div.progressbar:hover div.dot{
 
     footer .playbuttons{
         gap: 2rem;
+    }
+
+    footer .volume{
+        opacity: 1;
+        flex-basis: 50%;
+        width: auto;
+        padding: 1rem 0rem;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        background-color: transparent;
+        transform: rotate(0);
     }
 
 }
